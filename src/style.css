@@ -4,7 +4,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
     /* border: 1px solid black */
+}
+
+a {
+    text-decoration: none;
 }
 
 /* Header Component */
@@ -24,29 +29,21 @@ header {
 }
 
 header h2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    text-align: center;
     padding: 1rem;
-    color: #004aad
+    color: #f2df5a;
 }
 
-header div img {
+header img {
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
     transform: scaleX(-1);
     z-index: -1;
-}
-
-header div:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    background: rgba(1, 0, 0, 0.3);
 }
 
 #small-screen details > summary  {
@@ -56,24 +53,37 @@ header div:after {
     text-align: end;
     font-size: 2rem;
     z-index: 2;
+    color: #fff;
+    padding-right: 1.5rem;
 }
 
 #small-screen details {
     display: flex;
     flex-direction: column;
     position: absolute;
-    right: 1.5rem;
-    top: 1.5rem;
+    left: 0;
+    top: 2.6rem;
+    width: 100vw;
 }
 
 #small-screen details nav {
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    background-color: #fff;
+    top: 5vh;
+    left: 0;
+    height: 75vh;
+    align-items: center;
+    justify-content: space-around;
 }
 
-details nav a {
+#small-screen details nav a {
     padding: 1.5rem 0.5rem;
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 0.015rem;
+    font-size: 1.8rem;
 }
 
 /* Main component */
