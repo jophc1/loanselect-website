@@ -2,8 +2,6 @@ var cath = document.getElementById("catherine");
 var tilly = document.getElementById("tilly");
 var ryan = document.getElementById("ryan");
 
-
-
 function appearCath () {
     cath.classList.remove("hide")
     cath.classList.remove("show")
@@ -64,6 +62,7 @@ function cycleFn() {
     setTimeout(disapperHugh, 24000)
 }
 
+// Innitial cycle
 setTimeout(appearCath, 1000)
 setTimeout(disapperCath, 6000)
 setTimeout(appearTilly, 7000)
