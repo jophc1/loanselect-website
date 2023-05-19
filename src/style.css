@@ -19,7 +19,7 @@ header, #small-screen details {
     display: flex;
 }
 
-h1, p {
+h1, p, a {
     font-family: 'Noto Sans Nag Mundari', sans-serif;
 }
 
@@ -86,11 +86,75 @@ header img {
 }
 
 #small-screen details nav a {
-    padding: 1.5rem 0.5rem;
-    color: #000;
+    padding: 1.2rem 0.5rem;
+    color: #551a8b;
     font-weight: bold;
     letter-spacing: 0.015rem;
-    font-size: 1.8rem;
+    font-size: 4vh;
+}
+#small-screen details nav .activepage {
+    color: #000;
+    border: 1px hidden #fff;
+    /* border-radius: 10px; */
+    /* box-shadow: 5px 5px 10px #000; */
+    animation: drawBorderFromCenter 4s infinite;
+}
+
+@keyframes drawBorderFromCenter {
+   
+    0% {
+        border-left: 1px solid #000;
+    }
+    10% {
+        border-left: 1px solid #00000080;
+    }
+    15% {
+        border-left: 1px solid #00000040;
+    }
+    20% {
+        border-left: 1px hidden #fff;
+    }
+    21% {
+        border-top: 1px solid #000;
+    }
+    31% {
+        border-top: 1px solid #00000080;
+    }
+    36% {
+        border-top: 1px solid #00000030;
+    }
+    41% {
+        border-top: 1px hidden #fff;
+        
+    }
+    42% {
+        border-right: 1px solid #000;
+    }
+    52% {
+        border-right: 1px solid #00000080;
+    }
+    57% {
+        border-right: 1px solid #00000020;
+    }
+    62%
+    {   border-right: 1px hidden #fff;
+    }
+    63% {
+        border-bottom: 1px solid #000;
+    }
+    73% {
+        border-bottom: 1px solid #00000080;
+    }
+    79% {
+        border-bottom: 1px solid #00000020;
+    }
+    83% {
+        border-bottom: 1px hidden #fff;
+    }
+    84%
+    {
+        border: 1px hidden #fff;
+    }
 }
 
 /* Main component */
@@ -267,6 +331,7 @@ footer {
 
 footer a {
     font-size: 7vh;
+    color: #551a8b;
 }
 
 
