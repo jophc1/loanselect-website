@@ -191,11 +191,15 @@ main section:nth-of-type(3) div img {
 
 /* Testimonials */
 .show {
-    display: block !important;
+    visibility: visible !important;
+    opacity: 1;
+    transition: visibility 2s, opacity 1s linear;
 }
 
 .hide {
-    display: none !important;
+    visibility: hidden !important;
+    opacity: 0;
+    transition: visibility 1s, opacity 1s linear;
 }
 
 main section:nth-of-type(4) > div {
@@ -205,15 +209,24 @@ main section:nth-of-type(4) > div {
 main section:nth-of-type(4)> div div {
     position: absolute;
     z-index: 0;
-    top: 5rem;
     left: 18vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 65%;
 }
+
+main section:nth-of-type(4)> div div:nth-of-type(odd) {
+    top: 6rem;
+}
+
+main section:nth-of-type(4)> div div:nth-of-type(even) {
+    top: 8rem;
+}
+
+
 main section:nth-of-type(4)> div div p:first-of-type {
-    font-size: 2.5vh;
+    font-size: 1.8vh;
 }
 main section:nth-of-type(4)> div div p:last-of-type {
     padding-top: 1rem;
@@ -221,7 +234,7 @@ main section:nth-of-type(4)> div div p:last-of-type {
 
 
 main section:nth-of-type(4) > div img {
-    width: 100%
+    width: 100%;
 }
 
 

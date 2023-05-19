@@ -74,4 +74,4 @@ setTimeout(disapperHugh, 24000)
 
 window.setInterval(() => {
     cycleFn();
-}, 25000);
+}, 24500);
