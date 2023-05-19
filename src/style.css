@@ -105,13 +105,31 @@ main section img {
 
 main section:nth-of-type(odd) {
     background-color: #ada0f1;
-    color: #e4f1a0
+    color: #f2df5a;
+}
+
+main section:nth-of-type(odd) p {
+    color: #fff;
+}
+main section:last-of-type p {
+    color: #000;
 }
 
 main section:last-of-type {
     background-color: white;
     color: black;
     padding-bottom: 15vh;
+}
+
+.section-heading {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2.5rem;
+    letter-spacing: 0.15rem;
+}
+#hero-text {
+    padding: 1rem;
+    font-size: 1.5rem;
 }
 
 /* footer component */
@@ -127,8 +145,8 @@ footer {
 }
 
 footer a {
-    padding: 1rem;
-    font-size: 2.5rem;
+    padding-top: 1rem;
+    font-size: 3.5rem;
 }
 
 
