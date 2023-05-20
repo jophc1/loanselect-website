@@ -94,66 +94,31 @@ header img {
 }
 #small-screen details nav .activepage {
     color: #000;
-    border: 1px hidden #fff;
-    /* border-radius: 10px; */
-    /* box-shadow: 5px 5px 10px #000; */
-    animation: drawBorderFromCenter 4s infinite;
+    border:none;
+    position: relative;
+    /* animation: drawBorderFromCenter 4s infinite; */
 }
 
-@keyframes drawBorderFromCenter {
-   
-    0% {
-        border-left: 1px solid #000;
+#small-screen details nav .activepage::after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 5px;
+    left: 50%;
+    bottom: 0;
+    background-color: #000;
+    transition: all ease-in-out .2s;
+    animation: animateBottomBorder 3s infinite;
+}
+
+@keyframes animateBottomBorder {
+    from {
+        width: 0px;
+        left: 50%;
     }
-    10% {
-        border-left: 1px solid #00000080;
-    }
-    15% {
-        border-left: 1px solid #00000040;
-    }
-    20% {
-        border-left: 1px hidden #fff;
-    }
-    21% {
-        border-top: 1px solid #000;
-    }
-    31% {
-        border-top: 1px solid #00000080;
-    }
-    36% {
-        border-top: 1px solid #00000030;
-    }
-    41% {
-        border-top: 1px hidden #fff;
-        
-    }
-    42% {
-        border-right: 1px solid #000;
-    }
-    52% {
-        border-right: 1px solid #00000080;
-    }
-    57% {
-        border-right: 1px solid #00000020;
-    }
-    62%
-    {   border-right: 1px hidden #fff;
-    }
-    63% {
-        border-bottom: 1px solid #000;
-    }
-    73% {
-        border-bottom: 1px solid #00000080;
-    }
-    79% {
-        border-bottom: 1px solid #00000020;
-    }
-    83% {
-        border-bottom: 1px hidden #fff;
-    }
-    84%
-    {
-        border: 1px hidden #fff;
+    to {
+        width: 100%;
+        left: 0;
     }
 }
 
@@ -315,6 +280,11 @@ main section:nth-of-type(4) > h3 {
     font-family: 'Tangerine', cursive, 'times new roman';
     font-size: 8vh;
     padding: 1.5rem 0;
+}
+
+/* Credentials */
+main section:last-of-type a, main section:last-of-type a > p  {
+    color: #551a8b;
 }
 
 /* footer component */
