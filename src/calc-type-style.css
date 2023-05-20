@@ -9,9 +9,18 @@ main section:first-of-type h1, main section:first-of-type p {
 }
 
 main section:first-of-type iframe {
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 0 1rem;
 }
 
+main section:first-of-type a {
+    border: 1px solid #000;
+    padding: 1.2rem;
+    color: #551a8b;
+}
+
+main section:last-of-type {
+    padding-top: 10rem;
+}
 
 
 
