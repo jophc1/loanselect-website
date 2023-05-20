@@ -53,25 +53,25 @@ function disapperHugh () {
 
 function cycleFn() {
     setTimeout(appearCath, 1000)
-    setTimeout(disapperCath, 6000)
-    setTimeout(appearTilly, 7000)
-    setTimeout(disapperTilly, 12000)
-    setTimeout(appearRyan, 13000)
-    setTimeout(disapperRyan, 18000)
-    setTimeout(appearHugh, 19000)
-    setTimeout(disapperHugh, 24000)
+    setTimeout(disapperCath, 11000)
+    setTimeout(appearTilly, 12000)
+    setTimeout(disapperTilly, 17000)
+    setTimeout(appearRyan, 18000)
+    setTimeout(disapperRyan, 28000)
+    setTimeout(appearHugh, 29000)
+    setTimeout(disapperHugh, 34000)
 }
 
 // Innitial cycle
 setTimeout(appearCath, 1000)
-setTimeout(disapperCath, 6000)
-setTimeout(appearTilly, 7000)
-setTimeout(disapperTilly, 12000)
-setTimeout(appearRyan, 13000)
-setTimeout(disapperRyan, 18000)
-setTimeout(appearHugh, 19000)
-setTimeout(disapperHugh, 24000)
+setTimeout(disapperCath, 11000)
+setTimeout(appearTilly, 12000)
+setTimeout(disapperTilly, 17000)
+setTimeout(appearRyan, 18000)
+setTimeout(disapperRyan, 28000)
+setTimeout(appearHugh, 29000)
+setTimeout(disapperHugh, 34000)
 
 window.setInterval(() => {
     cycleFn();
-}, 24500);
+}, 34500);
