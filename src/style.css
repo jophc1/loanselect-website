@@ -31,6 +31,7 @@ header {
     height: 15vh;
     position: sticky;
     top: 0;
+    z-index: 2;
 }
 
 header h2 {
@@ -107,7 +108,6 @@ header img {
     left: 50%;
     bottom: 0;
     background-color: #000;
-    transition: all ease-in-out .2s;
     animation: animateBottomBorder 3s infinite;
 }
 
@@ -217,6 +217,8 @@ main section:nth-of-type(3) div img {
  main section:nth-of-type(3) div {
      background-color: #f5f5f5;
      height: 40%;
+     position: relative;
+     z-index: 0;
  }
  main section:nth-of-type(3) div:last-of-type {
      margin-left: 10%;
@@ -227,6 +229,149 @@ main section:nth-of-type(3) div img {
      width: 90%;
 }
 
+main section:nth-of-type(3) > div span {
+    position: absolute;
+    border-radius: 100vmax;
+}
+
+main section:nth-of-type(3) > div .top {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background: linear-gradient(
+            90deg,
+            transparent 50%,
+            #ada0f180,
+            #ada0f1
+            );
+    animation: animateTop 10s ease-in-out infinite;
+}
+
+@keyframes animateTop {
+    25% {
+      width: 100%;
+      opacity: 1;
+    }
+  
+    30%,
+    100% {
+      opacity: 0;
+    }
+}
+
+main section:nth-of-type(3) > div .right {
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 0;
+    background: linear-gradient(
+            180deg,
+            transparent 30%,
+            #ada0f180,
+            #ada0f1
+            );
+    animation: animateRight 10s ease-in-out infinite;
+}
+@keyframes animateRight {
+    0%, 25% {
+        height: 0;
+        opacity: 0;
+    }
+    50% {
+        height: 100%;
+        opacity: 1;
+    }
+    55%,
+    100% {
+        height: 100%;
+        opacity: 0;
+    }
+}
+
+main section:nth-of-type(3) > div .bottom {
+    right: 0;
+    bottom: 0;
+    height: 5px;
+    background: linear-gradient(
+        90deg,
+        #ada0f1,
+        #ada0f180,
+        transparent 100%
+        );
+    animation: animateBottom 10s ease-in-out infinite;
+}
+
+@keyframes animateBottom {
+    0%,
+    50% {
+      width: 0%;
+      opacity: 0;
+    }
+    75% {
+        width: 100%;
+        opacity: 1; 
+    }
+    76%,
+    100% {
+      opacity: 0;
+    }
+}
+
+main section:nth-of-type(3) > div .bottomImgTwo {
+    right: 0;
+    bottom: 0;
+    height: 5px;
+    background: linear-gradient(
+        90deg,
+        #ada0f1,
+        #ada0f180,
+        transparent 100%
+        );
+    animation: animateBottom 10s ease-in-out infinite;
+}
+
+main section:nth-of-type(3) > div .topImgTwo {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background: linear-gradient(
+            90deg,
+            transparent 50%,
+            #ada0f180,
+            #ada0f1
+            );
+    animation: animateTop 10s ease-in-out infinite;
+}
+
+main section:nth-of-type(3) > div .leftImgTwo {
+    bottom: 0;
+    left: 0;
+    width: 5px;
+    height: 0;
+    background: linear-gradient(
+            180deg,
+            #ada0f1,
+            #ada0f180,
+            transparent 70%
+            );
+    animation: animateLeft 10s ease-in-out infinite;
+}
+
+@keyframes animateLeft {
+    0%,
+    75% {
+      opacity: 0;
+      bottom: 0;
+      height: 0;
+    }
+  
+    100% {
+      opacity: 1;
+      height: 100%;
+    }
+  }
 
 /* Testimonials */
 .show {
