@@ -266,8 +266,3 @@ main section:nth-of-type(4) > h3 {
     font-size: 8vh;
     padding: 1.5rem 0;
 }
-
-/* Credentials */
-main section:last-of-type a, main section:last-of-type a > p  {
-    color: #551a8b;
-}

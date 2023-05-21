@@ -158,6 +158,11 @@ main section:last-of-type {
     padding-bottom: 15vh;
 }
 
+/* Credentials */
+main section:last-of-type a, main section:last-of-type a > p  {
+    color: #551a8b;
+}
+
 /* footer component */
 footer {
     display: flex;
