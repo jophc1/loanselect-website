@@ -158,6 +158,19 @@ main section:last-of-type {
     padding-bottom: 15vh;
 }
 
+#contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-details div {
+    display: flex;
+    width: 80%;
+    padding-top: 0.5rem;
+    justify-content: space-between;
+}
+
 /* Credentials */
 main section:last-of-type a, main section:last-of-type a > p  {
     color: #551a8b;
