@@ -1,9 +1,26 @@
+main section:first-of-type {
+    height: auto;
+}
 
 main section:first-of-type img {
     width: 100%;
     height: 20vh;  
     object-fit: cover;
     object-position: 25% 35%;
+}
+#contact-form label {
+    padding: 1rem 0;
+    font-size: 1.2rem;
+}
+#contact-form input {
+    padding: 1rem;
+    font-size: 1.15rem;
+}
+#contact-form input:last-of-type {
+    background-color: #f2df5a;
+    text-align: center;
+    margin: 1.5rem;
+    text-transform: uppercase;
 }
 
 #contact-details, main section:first-of-type img {
@@ -23,7 +40,6 @@ main section:first-of-type > p {
 main section form label, main section form input, #add_info {
     display: block;
     margin: 0.25rem auto;
-    width: 15rem;
+    width: 85%;
     text-align: left;
-    /* width: 50%; */
 }
