@@ -13,6 +13,13 @@ window.onload = function() {
         emailjs.sendForm('service_rwf6ign', 'template_iizwdpx', this)
             .then(function() {
                 console.log('SUCCESS!');
+                
+                document.getElementById("frm-button").value = 'Successfully sent';
+                
+                setTimeout(function() {
+                    document.getElementById("frm-button").value = 'Send';
+                }, 2000);
+                
             }, function(error) {
                 console.log('FAILED...', error);
             });

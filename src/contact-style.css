@@ -19,7 +19,7 @@ main section:first-of-type img {
 #contact-form input:last-of-type {
     background-color: #f2df5a;
     text-align: center;
-    margin: 1.5rem;
+    margin: 1.5rem auto;
     text-transform: uppercase;
 }
 
@@ -42,4 +42,10 @@ main section form label, main section form input, #add_info {
     margin: 0.25rem auto;
     width: 85%;
     text-align: left;
+}
+.hide_status {
+    display: hidden !important;
+}
+.show_status {
+    display: visible !important;
 }
