@@ -19,3 +19,11 @@ main section:first-of-type > p {
     padding: 1.5rem 0;
     font-size: 1.1rem;
 }
+
+main section form label, main section form input, #add_info {
+    display: block;
+    margin: 0.25rem auto;
+    width: 15rem;
+    text-align: left;
+    /* width: 50%; */
+}

@@ -45,8 +45,24 @@
             </h1>
 
             <form>
+                <label for="fname" alt="first name input">First name:</label>
+                <input type="text" name="first_name" id="fname" required/>
 
+                <label for="lname" alt="last name input">Last name (optional):</label>
+                <input type="text" name="last_name" id="lname"/>
+
+                <label for="email" alt="email input">Email:</label>
+                <input type="text" name="email" id="email" placeholder="eg. john@gmail.com" required/>
+
+                <label for="contact_number" alt="phone number input">Contact number:</label>
+                <input type="text" name="phone" id="contact_number" required/>
+
+                <label for="add_info" alt="additional info input">How can we help? (optional):</label>
+                <textarea name="comments" id="add_info" rows="10"></textarea>
+
+                <input type="submit"/>
             </form>
+
             <article id="contact-details">
                 <h3>Get a free consultation by contacting us at</h3>
                 <div><p>Office:</p><p><a href="tel: 0740410855">07 4041 0855</a></p></div>
