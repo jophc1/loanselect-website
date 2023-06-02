@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contact-style.css">
     <link rel="shortcut icon" href="images/LS_logo.png" type="image/x-icon">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="emailjs.js"></script>
     
 </head>
 <body>
@@ -24,9 +27,9 @@
                     <span class="fa fa-bars"></span>
                 </summary>
                 <nav>
-                    <a class="activepage" href="#">HOME</a>
+                    <a href="index.html">HOME</a>
                     <a href="about.html">ABOUT</a>
-                    <a href="contact.html">CONTACT</a>
+                    <a class="activepage" href="#">CONTACT</a>
                     <a href="calculator-index.html">CALCULATORS</a>
                     <a href="news.html">NEWS</a>
                 </nav>
@@ -44,23 +47,23 @@
                 Contact David Phillips
             </h1>
 
-            <form>
-                <label for="fname" alt="first name input">First name:</label>
+            <form id="contact-form">
+                
+                <label for="fname" alt="first name input">First name (*:</label>
                 <input type="text" name="first_name" id="fname" required/>
 
                 <label for="lname" alt="last name input">Last name (optional):</label>
                 <input type="text" name="last_name" id="lname"/>
 
-                <label for="email" alt="email input">Email:</label>
-                <input type="text" name="email" id="email" placeholder="eg. john@gmail.com" required/>
+                <label for="email_contact" alt="email input">Email (*):</label>
+                <input type="email" name="email_contact" id="email_contact" placeholder="eg. john@gmail.com" required/>
 
-                <label for="contact_number" alt="phone number input">Contact number:</label>
-                <input type="text" name="phone" id="contact_number" required/>
+                <label for="contact_number" alt="phone number input">Contact number (optional):</label>
+                <input type="tel" name="phone" id="contact_number"/>
 
                 <label for="add_info" alt="additional info input">How can we help? (optional):</label>
                 <textarea name="comments" id="add_info" rows="10"></textarea>
-
-                <input type="submit"/>
+                <input type="submit" value="Send"/>
             </form>
 
             <article id="contact-details">
@@ -94,6 +97,5 @@
         <a href="mailto: david@loanselect.com.au"><span class="fa fa-envelope"></span></a>
         <a href="https://au.linkedin.com/in/david-phillips-loan-select-cairns-a2a99529"><span class="fab fa-linkedin"></span></a>
     </footer>
-    <script src="testimonial-script.js"></script>
 </body>
 </html>
