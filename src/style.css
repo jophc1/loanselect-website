@@ -32,7 +32,7 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 15vh;
+    height: 12vh;
     position: sticky;
     top: 0;
     z-index: 2;
@@ -75,7 +75,7 @@ header h2 {
     flex-direction: column;
     position: absolute;
     left: 0;
-    top: 2.6rem;
+    top: 1.5rem;
     width: 100vw;
 }
 
@@ -84,9 +84,9 @@ header h2 {
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    top: 3vh;
+    top: 0;
     left: 0;
-    height: 78vh;
+    height: 80vh;
     align-items: center;
     justify-content: space-around;
 }
