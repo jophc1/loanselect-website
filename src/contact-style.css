@@ -12,15 +12,17 @@ main section:first-of-type img {
     padding: 1rem 0;
     font-size: 1.2rem;
 }
-#contact-form input {
+#contact-form input, #contact-form textarea {
     padding: 1rem;
     font-size: 1.15rem;
+    border: none
 }
 #contact-form input:last-of-type {
     background-color: #f2df5a;
     text-align: center;
     margin: 1.5rem auto;
     text-transform: uppercase;
+    border: none;
 }
 
 #contact-details, main section:first-of-type img {
