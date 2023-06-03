@@ -43,6 +43,7 @@ header h2 {
     color: #f2df5a;
     font-family: 'Contrail One', cursive;
     text-shadow: -1px -1px 0 #000;
+    text-transform: uppercase;
 }
 
 header img {
@@ -92,6 +93,7 @@ header img {
     font-weight: bold;
     letter-spacing: 0.015rem;
     font-size: 4vh;
+    text-transform: uppercase;
 }
 #small-screen details nav .activepage {
     color: #000;
