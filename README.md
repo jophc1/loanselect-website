@@ -15,4 +15,4 @@ LinkedIn: https://www.linkedin.com/in/joshua-phillips-7ba679278/
 ##### Jordan Saker:
 Github: https://github.com/jordansaker
 
-LinkedIn: https://www.linkedin.com/in/jordan-saker-0093b5260/
+LinkedIn: https://www.linkedin.com/in/jordansakerdev/
