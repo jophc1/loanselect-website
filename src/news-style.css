@@ -6,27 +6,49 @@ main > section:first-of-type {
 
 /* BLOG POST LIST */
 #news {
+    margin-top: 1.5rem;
     padding: 0;
-    width: 100%;
+    width: 90%;
+    position: relative;
+    background-color: #ada0f1;
 }
-#news > section {
+#news section {
     width: 100%;
-    border: 1.2rem solid #ada0f1;
     padding: 1rem;
 }
+
+.post {
+    border-bottom: 0.5rem solid #ada0f1;
+    border-top: 0.5rem solid #ada0f1;
+    box-shadow: #0000004D 0px 19px 38px, #00000038 0px 15px 12px;
+    background-color: #fff;
+}
+
+.post:not(:first-child) {
+    margin-top: 2rem;
+}
+
 #news h2 {
     text-transform: capitalize;
 }
-#news > section > section {
+#news > section > section:nth-of-type(2) {
     display: flex;
     width: 100%;
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding: 0
+    padding: 0;
+}
+#news > section > section > div {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
 }
 #news img {
     width: 40%;
+}
 
+#news p {
+    font-size: 0.8rem;
 }
 
 main section:last-of-type {

@@ -15,7 +15,7 @@ fetch(
     let parentElement = document.getElementById("news");
     // write the template string
     const postTemplateString =
-      "<section class='post'><h2></h2><section><div></div></section></section>";
+      "<section class='post'><section><h2></h2></section><section><div></div></section></section>";
     // page layout of elements that will be added to HTML document
     let pageLayout = "";
     // generate the required page layout based on the number of posts in the postObject
@@ -42,7 +42,7 @@ fetch(
             .getElementsByClassName("post")
             [i].contains(document.getElementsByClassName("post")[i].children[0])
         ) {
-          document.getElementsByClassName("post")[j].children[0].innerHTML =
+          document.getElementsByClassName("post")[j].children[0].children[0].innerHTML =
             postsObject.posts[j].title;
         }
         if (
@@ -71,5 +71,5 @@ fetch(
           }
       }
     }
-    console.log(document.getElementsByClassName("post")[1].children[1].children[1]);
+    console.log(postsObject.posts[0].date.split('T'));
   });
