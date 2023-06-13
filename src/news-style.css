@@ -6,13 +6,12 @@ main > section:first-of-type {
 
 /* BLOG POST LIST */
 #news {
-    margin-top: 1.5rem;
     padding: 0;
     width: 90%;
     position: relative;
     background-color: #ada0f1;
 }
-#news section {
+#news a section {
     width: 100%;
     padding: 1rem;
 }
@@ -24,21 +23,22 @@ main > section:first-of-type {
     background-color: #fff;
 }
 
-.post:not(:first-child) {
+#news a {
+    display: block;
     margin-top: 2rem;
 }
 
-#news h2 {
+#news a h2 {
     text-transform: capitalize;
 }
-#news > section > section:nth-of-type(2) {
+#news a > section > section:nth-of-type(2) {
     display: flex;
     width: 100%;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 0;
 }
-#news > section > section > div {
+#news a > section > section > div {
     display: flex;
     flex-direction: column;
     align-self: center;

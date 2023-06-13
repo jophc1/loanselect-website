@@ -212,7 +212,7 @@ footer a {
     #large-screen, main > div {
         display: block;
     }
-    header h2, #banner-nav, #small-screen,  main section:first-of-type img {
+    header h2, #banner-nav, #small-screen,  main > section:first-of-type > img {
         display: none;
     }
     header {
