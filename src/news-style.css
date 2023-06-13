@@ -1,7 +1,32 @@
-main section:first-of-type {
+main > section:first-of-type {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+/* BLOG POST LIST */
+#news {
+    padding: 0;
+    width: 100%;
+}
+#news > section {
+    width: 100%;
+    border: 1.2rem solid #ada0f1;
+    padding: 1rem;
+}
+#news h2 {
+    text-transform: capitalize;
+}
+#news > section > section {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0
+}
+#news img {
+    width: 40%;
+
 }
 
 main section:last-of-type {

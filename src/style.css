@@ -137,13 +137,13 @@ main section:not(:last-of-type) {
     height: auto;
 }
 
-main section img {
+main > section > img {
     display: block;
     width: 50%;
     margin: 0 auto;
 }
 
-main section:nth-of-type(odd) {
+main > section:nth-of-type(odd) {
     background-color: #ada0f1;
     color: #f2df5a;
 }
@@ -256,7 +256,7 @@ footer a {
         margin: 0 auto;
     }
 
-    main section:last-of-type {
+    main > section:last-of-type {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
