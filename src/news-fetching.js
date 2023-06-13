@@ -66,6 +66,7 @@ fetch(
         }
       }
     }
+    // post date
     let date_arr = postsObject.posts[0].date.split('T')
     console.log(date_arr[0].split('-'));
   });
