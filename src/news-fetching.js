@@ -19,7 +19,7 @@ fetch(
     // generate the required page layout based on the number of posts in the postObject
     for (let i = 0; i < postsObject.posts.length; i++) {
         // postTemplate links to generic 'news-post.html'
-      pageLayout += "<a href='news-post.html' onclick='collectPost(" + i + ")'><section class='post'><section><h2></h2></section><section><div></div></section></section></a>";
+      pageLayout += "<a href='' onclick='collectPost(" + i + ")'><section class='post'><section><h2></h2></section><section><div></div></section></section></a>";
     }
     // add the final page layout to the HTML document by setting the inner HTML of the parent to contain
     // the page layout string
@@ -69,3 +69,25 @@ fetch(
     let date_arr = postsObject.posts[0].date.split('T')
     console.log(date_arr[0].split('-'));
   });
+
+
+const collectPost = function(id) {
+    document.cookie = "postID=" + id;
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+console.log(getCookie("postID"))
